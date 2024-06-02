@@ -1,0 +1,179 @@
+ .colors{
+  color:#43D449;
+  color:#35A03A;
+  color:#28CB53;
+  color:#FFFFFF;
+  color:#D6E2DC;
+  color:#999999;
+ }
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  position: sticky; /* Torna o cabeçalho fixo ao rolar */
+  top: 0; /* Posiciona no topo */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.topnav {
+  background-color: #333;
+  display: flex;
+  justify-content: center; /* Centraliza o menu */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 5px; /* Adiciona espaço entre os links */
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.start-screen {
+  height: 95vh;
+  background-color: #43D449;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Necessário para posicionar os triângulos */
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.triangle-1 {
+  border-left: 15vw solid transparent;
+  border-right: 15vw solid transparent;
+  border-bottom: 15vw solid #28cb53;
+  left: 0;
+  bottom: 0;
+}
+
+.triangle-2 {
+  border-left: 55vw solid transparent;
+  border-right: 55vw solid transparent;
+  border-bottom: 55vw solid white;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  overflow: hidden;
+}
+
+.triangle-3 {
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-top: 20vw solid #35A03A ;
+  opacity: 0.9;
+  top: -10%;
+  right: -14%;
+}
+
+/* Estilos de texto */
+.text-middle {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-middle h1 {
+  font-size: 80px;
+  color: white;
+  font-family: "PT Serif", serif;
+  font-weight: 900;
+  font-style: bold;
+}
+
+.text-middle hr {
+  width: 98%;
+  margin-top: 5px;
+  border: none;
+  border-top: 5px solid white;
+}
+
+.text-bottom {
+  position: absolute;
+  bottom: 35%;
+  left: 9%;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: bold;
+  color: #333;
+}
+
+.text-top {
+  position: absolute;
+  top: 24%;
+  right: 48%;
+  font-size: 18px;
+  font-family: "PT Serif", serif;
+  font-weight: 900;
+  font-style: bold;
+  color: white;
+}
+
+
+main {
+  padding: 0px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .topnav {
+      flex-direction: column; /* Alinha os itens em coluna em telas menores */
+  }
+
+  .topnav a {
+      margin: 0; /* Remove o espaçamento entre os links */
+      padding: 10px; /* Ajusta o padding para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+      padding: 10px; /* Ajusta o padding para telas menores */
+  }
+
+  h1 {
+      font-size: 1.5em; /* Ajusta o tamanho da fonte dos títulos */
+  }
+
+  p {
+      font-size: 1em; /* Ajusta o tamanho da fonte dos parágrafos */
+  }
+}
