@@ -12,22 +12,22 @@
       transform: translateX(-100%);
   }
   50% {
-      transform: translateX(0);
+      transform: translateX(50%);
   }
   100% {
-      transform: translateX(-100%);
+      transform: translateX(150%);
   }
 }
 
 @keyframes move-triangle-3 {
   0% {
-      transform: translateX(100%);
+      transform: translateX(50%);
   }
   50% {
-      transform: translateX(0);
+      transform: translateX(-100%);
   }
   100% {
-      transform: translateX(100%);
+      transform: translateX(-250%);
   }
 }
 
@@ -51,6 +51,20 @@ body {
   background-color: #f4f4f4;
 }
 
+main {
+  padding: 0px;
+}
+
+.general-title-banner {
+  width: 85%;
+  margin: 20px auto; /* Centraliza o banner horizontalmente e adiciona espaço superior */
+  text-align: center; /* Centraliza o texto dentro do banner */
+  background-color: #f2f2f2; /* Cor de fundo opcional */
+  padding: 20px; /* Espaçamento interno opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+/** ################################################### NAVBAR ######################################################################## */
 header {
   background-color: #333;
   color: white;
@@ -87,7 +101,9 @@ header {
   background-color: #04AA6D;
   color: white;
 }
+/** ################################################### END NAVBAR ######################################################################## */
 
+/** ################################################### HOME PAGE ######################################################################## */
 .start-screen {
   height: 95vh;
   background-color: #43D449;
@@ -179,24 +195,14 @@ header {
   color: white;
 }
 
-main {
-  padding: 0px;
-}
+/** ################################################### END HOME PAGE ######################################################################## */
 
+/** ################################################### COURSES PAGE ######################################################################## */
 .courses-area {
   background-color: #999999;
   display: block;
   position: relative; /* Necessário para posicionar os triângulos */
   overflow: hidden; /* Garante que os triângulos não ultrapassem a área da tela */
-}
-
-.general-title-banner {
-  width: 85%;
-  margin: 20px auto; /* Centraliza o banner horizontalmente e adiciona espaço superior */
-  text-align: center; /* Centraliza o texto dentro do banner */
-  background-color: #f2f2f2; /* Cor de fundo opcional */
-  padding: 20px; /* Espaçamento interno opcional */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
 .course-title-banner {
@@ -240,8 +246,6 @@ main {
 .course-button:hover{
   color: white
 }
-
-
 
 .card {
   text-align: center;
@@ -354,6 +358,10 @@ main {
   font-size: 26px;
 }
 
+/** ################################################### END COURSES PAGE ######################################################################## */
+
+/** ################################################### PRODUCTS PAGE ######################################################################## */
+
 .products-container {
   height: 120vh;
   background: rgb(153,153,153);
@@ -374,13 +382,6 @@ main {
   color: #28CB53;
   font-weight: 700;
   font-family: "PT Serif", serif;
-}
-
-.about-container {
-  background-color: #202020;
-  display: block;
-  position: relative;
-  overflow: hidden;
 }
 
 .products-title-banner {
@@ -480,7 +481,7 @@ main {
   height: auto;
 }
 
-.next-icon{
+.next-icon {
   margin-left: -11px;
   margin-top: -1px;
   width: 35px;
@@ -546,8 +547,21 @@ main {
 .transition {
   height: 300px;
   background: rgb(153,153,153);
-background: linear-gradient(180deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 50%, rgba(32,32,32,1) 100%);
+  background: linear-gradient(180deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 50%, rgba(32,32,32,1) 100%);
 }
+
+/** ################################################### END PRODUCTS PAGE ######################################################################## */
+
+/** ################################################### ABOUT PAGE ######################################################################## */
+
+.about-container {
+  background-color: #202020;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+/** ################################################### END ABOUT PAGE ######################################################################## */
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
