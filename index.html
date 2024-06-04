@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -15,8 +16,8 @@
             <div class="topnav">
                 <a class="active" href="#start">Início</a>
                 <a href="#courses">Cursos</a>
-                <a href="#mentors">Produtos</a>
-                <a href="#us">Sobre nós</a>
+                <a href="#products">Produtos</a>
+                <a href="#about">Sobre</a>
             </div>
         </nav>
     </header>
@@ -146,7 +147,7 @@
                     </div>
 
                 </div>
-                <div class="course-title-banner">
+                <div class="general-title-banner">
                     <h1>E apoio de uma comunidade engajada, veja depoimentos de alguns de nossos alunos:</h1>
                 </div>
                 <br />
@@ -171,60 +172,99 @@
                 <button class="course-start-button">Começar agora</button>
             </div>
         </section>
-            
-            
-        <!-- <section id="mentors">
-            <h1>Mentores</h1>
-            <p>100% dos profissionais que estão na plataforma foram
-                criteriosamente escolhidos, seja por sua capacidade técnica mas
-                principalmente porque não abrem mão de fazer um trabalho com
-                propósito, e irão te conduzir no melhor caminho para o crescimento
-                do seu negócio de maneira prática, didática e validada.</p>
-            <p>É composta por diversos profissionais de várias partes
-                do mundo: Empresários e Empreendedores com o
-                propósito de promover a colaboração, inovação e a
-                realização de sonhos, fornecendo insights
-                estratégicos, conselhos experientes e orientação
-                valiosa para enfrentar os desafios e alcançar o máximo
-                potencial de cada membro do grupo ou negócio.</p>
-        </section>
-        <section id="us">
-            <h1>Quem Somos</h1>
-            <p>Um Grupo de Networking Empreendedor com
-                abordagem estratégica e inovadora.
-                Contamos com um time preparado para
-                atender as necessidade específicas e
-                especialistas em diversas áreas para ajudar
-                sua empresa alcançar potencial e resultados
-                máximos. Nossos serviços têm a importância
-                de impactar diretamente os resultados do seu
-                negócio.</p>
-        </section>
-        <section id="objective">
-            <h1>Objetivo</h1>
-            <p>Ajudar você e sua empresa a ir mais longe, com
-                especialistas em diversas áreas, para
-                compartilhar conhecimentos, ideias e
-                experiências, a fim de impulsionar o
-                crescimento e o sucesso de projetos e negócios.</p>
-            <p>The Dreams é um projeto criado em 2023 para conectar mentes brilhantes. Mais do que um Grupo, The
-                Dreams é uma Escola de Negócios:
-                <ul>
-                    <li>Incentivo ao empreendedorismo;</li>
-                    <li>Capacitar empreendedores, e pessoas que querem iniciar seu próprio negócio;</li>
-                    <li>Estimular parcerias;</li>
-                    <li>Potencializar carreira profissional;</li>
-                    <li>Promover Networking para empreendedor e empresários de várias partes do mundo;</li>
-                    <li>Abrir espaço para empresários, empreendedores e profissionais apresentarem e divulgarem seus
-                    produtos, serviços e negócios;</li>
-                    <li>Rede de apoio para compartilhar experiências, conhecimentos e ideias;</li>
-                    <li>Convidar diversos especialistas e profissionais parceiros para contribuir com o crescimento
-                    pessoal e profissional dos membros do grupo;</li>
-                    <li>Influenciamos e impactamos mais de 800 participantes que fazem parte do nosso Networking.</li>
-                </ul>
-            </p>
-        </section> -->
+        <section id="products">
+            <div class="products-container">
+                <div class="products-title-banner">
+                    <h1>Nossos Produtos Usáveis:</h1>
+                </div>
+                <div class="carousel">
+                    <!-- <button class="carousel-button left">&lt;</button> -->
+                    <button class="carousel-button left">
+                        <img src="static/icons/previous-icon.png" class="previous-icon" alt="Botão Anterior">
+                    </button>
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <!-- Produtos mockados -->
+                            <li class="carousel-slide">
+                                <img src="static/images/camisa1.webp" alt="Produto 1">
+                                <div class="product-info">
+                                    <p class="old-price">R$ 200,00</p>
+                                    <p class="current-price">R$ 150,00</p>
+                                    <span class="cart-icon">
+                                        <img src="static/icons/cart-icon.png" alt="Carrinho de compra">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="static/images/camisa2.jpg" alt="Produto 2">
+                                <div class="product-info">
+                                    <p class="old-price">R$ 300,00</p>
+                                    <p class="current-price">R$ 250,00</p>
+                                    <span class="cart-icon">
+                                        <img src="static/icons/cart-icon.png" alt="Carrinho de compra">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="static/images/camisa3.jpg" alt="Produto 3">
+                                <div class="product-info">
+                                    <p class="old-price">R$ 400,00</p>
+                                    <p class="current-price">R$ 350,00</p>
+                                    <span class="cart-icon">
+                                        <img src="static/icons/cart-icon.png" alt="Carrinho de compra">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="static/images/camisa4.jpg" alt="Produto 4">
+                                <div class="product-info">
+                                    <p class="old-price">R$ 400,00</p>
+                                    <p class="current-price">R$ 350,00</p>
+                                    <span class="cart-icon">
+                                        <img src="static/icons/cart-icon.png" alt="Carrinho de compra">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="static/images/camisa5.jpg" alt="Produto 5">
+                                <div class="product-info">
+                                    <p class="old-price">R$ 400,00</p>
+                                    <p class="current-price">R$ 350,00</p>
+                                    <!-- <span class="cart-icon">🛒</span> -->
+                                    <span class="cart-icon">
+                                        <img src="static/icons/cart-icon.png" alt="Carrinho de compra">
+                                    </span>
+                                </div>
+                            </li>
+                            <!-- Adicione mais produtos conforme necessário -->
+                        </ul>
+                    </div>
+                    <button class="carousel-button right">
+                        <img src="static/icons/next-icon.png" class="next-icon" alt="Botão Próximo">
+                    </button>
+                </div>
+                <p class="products-container-undertext">
+                    Torne-se ainda mais Dreamer com nossos estilos e demonstre seu apreço pela comunidade
+                </p>
+                <div class="invite-container">
+                    <p class="products-container-invite">
+                        Ainda não faz parte da nossa comunidade?
+                    </p>
+                    <button class="invite-button">
+                        Participar da comunidade
+                    </button>
+                </div>
+                
 
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-container">
+                <div class="general-title-banner">
+                    <h1>O Grupo The Dreams</h1>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

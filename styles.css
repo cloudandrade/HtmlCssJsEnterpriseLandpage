@@ -178,6 +178,15 @@ main {
   overflow: hidden; /* Garante que os triângulos não ultrapassem a área da tela */
 }
 
+.general-title-banner {
+  width: 85%;
+  margin: 20px auto; /* Centraliza o banner horizontalmente e adiciona espaço superior */
+  text-align: center; /* Centraliza o texto dentro do banner */
+  background-color: #f2f2f2; /* Cor de fundo opcional */
+  padding: 20px; /* Espaçamento interno opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
 .course-title-banner {
   width: 85%;
   margin: 20px auto; /* Centraliza o banner horizontalmente e adiciona espaço superior */
@@ -331,31 +340,213 @@ main {
   height: 90px;
   background-color: #43D449;
   font-size: 26px;
+}
 
+.products-container {
+  height: 100vh;
+  background-color: #202020;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-container-undertext {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 24px;
+  border: none;
+  color: #28CB53;
+  font-weight: 700;
+  font-family: "PT Serif", serif;
+}
+
+.about-container {
+  background-color: #202020;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-title-banner {
+  width: 85%;
+  margin: 20px auto; /* Centraliza o banner horizontalmente e adiciona espaço superior */
+  text-align: center; /* Centraliza o texto dentro do banner */
+  background-color: #f2f2f2; /* Cor de fundo opcional */
+  
+  padding: 20px; /* Espaçamento interno opcional */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.products-title-banner h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 2em; /* Tamanho da fonte do título */
+  margin: 0; /* Remove margem padrão */
+  color: #35A03A;
+}
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  list-style: none; /* Remove os pontos de lista */
+  padding: 0; /* Remove o padding padrão da lista */
+  margin: 0; /* Remove a margem padrão da lista */
+}
+
+.carousel-slide {
+  min-width: 33.33%;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.5;
+  transform: scale(0.8);
+  box-sizing: border-box;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.carousel-slide.current-slide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.product-info {
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+
+.old-price {
+  color: red;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.current-price {
+  color: black;
+  margin: 0;
+}
+
+.cart-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-icon img {
+  width: 35px;
+  height: auto;
+}
+
+.previous-icon {
+  margin-left: -11px;
+  margin-top: -1px;
+  width: 35px;
+  height: auto;
+}
+
+.next-icon{
+  margin-left: -11px;
+  margin-top: -1px;
+  width: 35px;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7); 
+  border: solid 1px #202020;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1001;
+  padding: 0 10px;
+  border-radius: 70%;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.invite-container {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 20px auto;
+  text-align: center;
+  gap: 10px;
+}
+
+.products-container-invite {
+  font-size: 24px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-family: "PT Serif", serif;
+}
+
+.invite-button {
+  margin-top: 10px;
+  font-size: 18px;
+  border: none;
+  color: #35A03A;
+  font-weight: 900;
+  font-family: "PT Serif", serif;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .topnav {
-      flex-direction: column; /* Alinha os itens em coluna em telas menores */
+      /* Alteração: alinhamento do menu em coluna para telas menores */
+      flex-direction: column;
   }
 
   .topnav a {
-      margin: 0; /* Remove o espaçamento entre os links */
-      padding: 10px; /* Ajusta o padding para telas menores */
+      /* Alteração: ajuste de padding para telas menores */
+      padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  main {
-      padding: 10px; /* Ajusta o padding para telas menores */
-  }
-
+  /* Alteração: ajuste de tamanho da fonte para títulos e parágrafos */
   h1 {
-      font-size: 1.5em; /* Ajusta o tamanho da fonte dos títulos */
+      font-size: 1.5em;
   }
 
   p {
-      font-size: 1em; /* Ajusta o tamanho da fonte dos parágrafos */
+      font-size: 1em;
   }
 }
