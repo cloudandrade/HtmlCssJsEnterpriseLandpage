@@ -31,6 +31,18 @@
   }
 }
 
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #999999;
+  }
+  50% {
+    background-color: rgb(81, 83, 85);;
+  }
+  100% {
+    background-color: #202020;
+  }
+}
+
 
 body {
   font-family: Arial, sans-serif;
@@ -343,8 +355,9 @@ main {
 }
 
 .products-container {
-  height: 100vh;
-  background-color: #202020;
+  height: 120vh;
+  background: rgb(153,153,153);
+  background: linear-gradient(180deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 50%, rgba(32,32,32,1) 100%);
   display: block;
   position: relative;
   overflow: hidden;
@@ -372,12 +385,11 @@ main {
 
 .products-title-banner {
   width: 85%;
-  margin: 20px auto; /* Centraliza o banner horizontalmente e adiciona espaço superior */
-  text-align: center; /* Centraliza o texto dentro do banner */
-  background-color: #f2f2f2; /* Cor de fundo opcional */
-  
-  padding: 20px; /* Espaçamento interno opcional */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  margin: 120px auto 80px auto;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .products-title-banner h1 {
@@ -525,6 +537,16 @@ main {
   border-radius: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.invite-button:hover {
+  background-color: #999999;
+}
+
+.transition {
+  height: 300px;
+  background: rgb(153,153,153);
+background: linear-gradient(180deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 50%, rgba(32,32,32,1) 100%);
 }
 
 /* Estilos responsivos */
